@@ -10,7 +10,9 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 /**
  *
@@ -19,12 +21,23 @@ import javafx.scene.control.Label;
 public class MenuPrincipalController implements Initializable {
 
     @FXML
-    private Label label;
+    private TextField txtn1;
 
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    private TextField txtn2;
+
+    @FXML
+    private TextField txtr;
+
+    @FXML
+    private Button som;
+
+    @FXML
+    private void soma(ActionEvent e) {
+        Double n1 = Double.parseDouble(txtn1.getText());
+        Double n2 = Double.parseDouble(txtn2.getText());
+        Double somaa = n1 + n2;
+        txtr.setText(somaa.toString());
     }
 
     @Override

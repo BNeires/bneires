@@ -1,17 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
+<AnchorPane id="AnchorPane" fx:id="txtn1" prefHeight="371.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
-        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <JFXButton prefHeight="200.0" prefWidth="331.0" style="-fx-background-color: black;" text="BROTHER" textFill="WHITE">
+      <Label layoutX="94.0" layoutY="10.0" text="Calculadora" textFill="#4741b9">
          <font>
-            <Font name="Century Gothic Bold" size="38.0" />
+            <Font name="Century Gothic" size="30.0" />
          </font>
-      </JFXButton>
+      </Label>
+      <Label layoutX="81.0" layoutY="290.0" prefHeight="38.0" prefWidth="130.0" text="Resultado:" textFill="#141351">
+         <font>
+            <Font name="Century Gothic" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtn1" layoutX="43.0" layoutY="85.0" prefHeight="38.0" prefWidth="291.0" />
+      <TextField fx:id="txtn2" layoutX="43.0" layoutY="154.0" prefHeight="38.0" prefWidth="291.0" />
+      <Label layoutX="43.0" layoutY="68.0" text="Número 1" textFill="#141351">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="137.0" text="Número 2" textFill="#141351">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtr" editable="false" layoutX="187.0" layoutY="295.0" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: gray; -fx-color: white;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="som" layoutX="168.0" layoutY="223.0" mnemonicParsing="false" onAction="#soma" style="-fx-background-color: #4741b9;" text="+" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>
